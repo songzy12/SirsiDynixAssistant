@@ -1,17 +1,33 @@
 function extractInfoFromPage() {
   let result = '';
 
-  let copy_info = document.querySelector(".copy_info");
-  result += copy_info.innerText + '\n'
+  // 题名
+  let title = document.querySelectorAll(".title");
+  // 著者
+  let author = document.querySelectorAll(".author");
+  // 出版者
+  let publisher = document.querySelectorAll(".publisher");
+  // 索书号
+  let call_number = document.querySelectorAll(".call_number");
 
-  let holdingslists = document.querySelectorAll(".holdingslist");
-  row_content = ''
-  for (let i = 0; i < holdingslists.length; i++) {
-      row_content += holdingslists[i].innerText + '\t';
-      if (i % 4 == 3) {
-          result += row_content + '\n'
-          row_content = ''
-      }
+  if (call_number.length) {
+    for (let i = 0; i < title.length; i++) {
+      result += [title[i].innerText, author[i].innerText, publisher[i].innerText, call_number[i].innerText].join('\t') + '\n'
+    }
+  } else {
+    // 馆藏分布状况
+    copy_info =  document.querySelector(".copy_info");
+    result += copy_info.innerText + '\n'
+
+    // 馆藏
+    // holdingsheader = document.querySelector(".holdingsheader");
+    // result += holdingsheader.innerText +'\n'
+    
+    let holdingslists = document.querySelectorAll(".holdingslist");
+    for (let i = 0; i < holdingslists.length; i += 4) {
+      // 索书号，复本号，馆藏类型，馆藏位置
+      result += [holdingslists[i].innerText, holdingslists[i + 1].innerText, holdingslists[i + 2].innerText, holdingslists[i + 3].innerText].join('\t') + '\n'
+    }
   }
 
   let textarea = document.createElement('textarea');
