@@ -16,5 +16,11 @@ extractInfo.addEventListener("click", async () => {
 // current page
 // TODO(songzy): complete this function.
 function extractInfoFromPage() {
-    console.log("hi!");
+    let copy_info = document.querySelector(".copy_info");
+
+    let textarea = document.createElement('textarea');
+    document.body.parentNode.insertBefore(textarea, document.body);
+    textarea.value = copy_info.innerText;
+    textarea.select();
+    document.execCommand('copy');
 }
