@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "PKU library info extractor.",
+    "name": "PKU Library Assistant",
     "version": "1.0",
     "action": {
         "default_popup": "popup.html",
@@ -11,7 +11,7 @@
             "128": "/icons/icon128.png"
         }
     },
-    "description": "Extract useful info from PKU library book item page.",
+    "description": "Extract useful info from PKU library web page.",
     "icons": {
         "16": "/icons/icon16.png",
         "32": "/icons/icon32.png",
