@@ -1,0 +1,3727 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- Copyright (c) 2000 - 2012, SirsiDynix - Defines the head  body of each page. -->
+
+<html lang="zh-CN" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.5; user-scalable=1;" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+
+
+
+    <!-- sirsi-data session-state is 5 -->
+    <title>馆藏显示
+        - 鲁迅全集 鲁迅先生纪念委员会编 鲁迅著
+    </title>
+
+
+
+
+    <!-- Set the expiration date to the past so the page will always be reloaded -->
+
+    <meta http-equiv="Expires" content="Sun, 1 Jan 1995 08:00:00 CST" />
+
+
+    <!-- Not the login page -->
+
+
+
+    <script type="text/javascript">
+        setTimeout(function () { var pop = new myPop(); pop.popOut("您的登录会话已处于非活动状态一段时间了。 您将会在 60 秒的非活动状态后被自动退出本次会话。"); }, (840 - 60) * 1000);
+    </script>
+
+    <script type="text/javascript" src="/Js/prototype-1.6.1.js"></script>
+    <script type="text/javascript" src="/Js/scriptaculous.js"></script>
+    <script type="text/javascript" src="/Js/sirsidynix.js"></script>
+    <script type="text/javascript" src="/Js/datetimepicker.js"></script>
+
+
+
+    <script type="text/javascript" src="/Js/all-js-4-enriched-content.js"></script>
+
+
+
+
+
+    <link rel="stylesheet" href="/Css/default/default.css" type="text/css" />
+
+
+
+
+
+
+
+
+
+</head>
+<!-- if copies=0 or no holdings allowed, default tab to Catalog Record  -->
+
+
+
+
+
+
+<!-- Start the body of the document.  WARNING:  No comments are allowed inside of the body element's definition. - assign CSS Class of 'body_style' to tag -  If this is a download search results state (14, 62), then load the results in a new browser window to facilitate printing. -  If this is an Archive image view state (911), then open a new window to display the image in new window. -  To help prevent premature selection of a toolbar button (i.e., before the new toolbar is loaded), clear it when the page is unloaded. -->
+
+<body onLoad="">
+
+
+
+    <noscript>
+        Your browser does not support JavaScript and this application utilizes JavaScript to build content and provide
+        links to additional information. You should either enable JavaScript in your browser settings or use a browser
+        that supports JavaScript in order to take full advantage of this application.
+    </noscript>
+    <!--  Copyright (c) 2000 - 2009, SirsiDynix - Symphony Item View Page; State #5 -->
+    <!--  Copyright (c) 1996 - 2010, SirsiDynix Form for starting a new session in a new window. -->
+
+    <!-- By setting the "document.new_session.action" property to the URL for logging into a new session at the particular  page you want, a new window will be opened and a new WebCat session will be started automatically. Remember that many WebCat states are dependent on previous states, so only certain "cgi types" can be opened.
+
+Also, by setting the "document.new_session.new_gateway_db.value" property to a gateway database name, the new session will use that gateway instead of the user's default gateway. Note that the use of Javascript is required to submit this form. -->
+
+    <form name="new_session" method="post" action="/uhtbin/cgisirsi/?ps=R8tXNSIRxP/北大中心馆/0/57/49" target="new_session">
+
+        <input type="hidden" name="user_id" value="WEBSERVER" />
+        <input type="hidden" name="password" value="" />
+
+        <input type="hidden" name="new_gateway_db" value="" />
+    </form>
+
+
+    <!--  Copyright (c) 2000 - 2010, SirsiDynix - Puts the top-of-page information common to all pages. -->
+    <div id="header_container" class="header_container">
+        <h1>馆藏显示
+            - 鲁迅全集 鲁迅先生纪念委员会编 鲁迅著
+        </h1>
+        <a class="skipnav" href="#skipnav">跳过导航</a> <a name="top"></a>
+        <div class="branding_container">
+            <div class="branding">
+                <img border="0" src="/WebCat_Images/Chinese/Other/MiscD/LIBLOGO.gif" alt="北京大学图书馆馆藏查询系统"
+                    title="北京大学图书馆馆藏查询系统" />
+            </div>
+            <div class="branding_subheading">
+                <!-- Print the gateway envn title if not blank -->
+                e-Library at ....
+                北京大学图书馆馆藏查询系统
+            </div>
+        </div>
+        <div class="login_container">
+            <!-- present language choices -->
+            <div class="module_language_choices">
+                <!-- Add the Language options -->
+                <!-- Suppress an option for the current language -->
+                <!-- Suppress an option for the current language -->
+                <a href="/uhtbin/cgisirsi/?ps=njjUGAGkYF/北大中心馆/24230388/111/ENGLISH" title="English" target="_top"><img
+                        src="/WebCat_Images/Chinese/Other/MiscD/ENGLISH.gif" border=0 class="langicon"
+                        alt="English Language" title="English" /></a>
+            </div>
+            <form name="loginform" method="post" action="http://login.lib.pku.edu.cn/amconsole/AuthServices"
+                class="login_form">
+                <div class="user_name">
+                    <label for="alt_id">校园卡号:</label>
+                    <input type="text" value="" maxlength="20" id="alt_id" name="userid" class="user_name_input">
+                </div>
+                <div class="password">
+                    <label for="password">个人密码:</label>
+                    <input type="password" value="" maxlength="20" id="password" name="password" class="password_input">
+                </div>
+
+                <div style="display: none;">
+                    <input type="hidden" name="verb" id="verb" value="login"> &nbsp;
+                    <!--input type="hidden" value="false" id="Iplogin" name="Iplogin"--> &nbsp;
+                    <input type="hidden" name="Lid" id="Lid" value="portal"> &nbsp;
+                    <!--input type="hidden" value="kluwer" id="Lid" name="Lid"--> &nbsp;
+                    <input type="hidden" name="goto" id="goto"
+                        value="http://www.lib.pku.edu.cn/portal/mylib?redirect=webcat" class="login_button" />
+
+                    <!--input type="hidden" value="http://162.105.138.184:8090/idp/pku?goto=http%3A%2F%2Fuas.bj.calis.edu.cn%3A8090%2Famconsole%2FAuthServices%2F211010%3Fverb%3Dsplogin%26goto%3Dhttp%3A%2F%2F162.105.140.125%2Fdrupal6%2Fpkusso%2Flogin%253Fidp%253D211010" id="goto" name="goto"-->
+                </div>
+                <input type="submit" class="login_button" value="登入">
+            </form>
+            <!-- Custom 2011 add user name to titlebar add by zhouyg-->
+            <!-- login form-->
+        </div>
+    </div>
+
+    <!--  Copyright (c) 1996 - 2010, SirsiDynix - Gateway Root Bar. -->
+    <div id="header_menu_container" class="header_menu_container">
+        <h2>Navigation Menu</h2>
+        <ul class="menu">
+            <!-- display text with CSS instead -->
+            <li class="menu_link"><a href="/uhtbin/cgisirsi/?ps=OQD4dpbLe6/北大中心馆/24230388/38/1/X/BLASTOFF"
+                    class="blastoff">
+                    快速检索</a></li>
+            <li class="menu_link"><a href="/uhtbin/cgisirsi/?ps=YtWgcFWYJw/北大中心馆/24230388/38/66/X/BLASTOFF"
+                    class="rootbar">
+                    复杂检索</a></li>
+            <li class="menu_link"><a href="/uhtbin/cgisirsi/?ps=t0DUryixG5/北大中心馆/24230388/1/69/X/BLASTOFF"
+                    class="rootbar">
+                    学科分馆</a></li>
+            <li class="menu_link"><a href="/uhtbin/cgisirsi/?ps=XGIJEaw4CF/北大中心馆/24230388/1/2/X/BLASTOFF"
+                    class="rootbar">
+                    图书馆书目</a></li>
+            <li class="menu_link"><a href="/uhtbin/cgisirsi/?ps=XBVXAPvsxc/北大中心馆/24230388/1/29/X/BLASTOFF"
+                    class="rootbar">
+                    信息路径</a></li>
+            <li class="menu_link"><a href="/uhtbin/cgisirsi/?ps=88KeUjd4os/北大中心馆/24230388/36/39/X/BLASTOFF"
+                    class="rootbar">
+                    教学参考书</a></li>
+            <li class="menu_link"><a href="/uhtbin/cgisirsi/?ps=WFt8z9qXuH/北大中心馆/24230388/1/44/X/BLASTOFF"
+                    class="rootbar">
+                    信息咨询台</a></li>
+            <li class="menu_link"><a href="/uhtbin/cgisirsi/?ps=2FJCf6vSnf/北大中心馆/24230388/1/49/X/BLASTOFF"
+                    class="rootbar">
+                    读者服务</a></li>
+            <li class="menu_link"><a href="/uhtbin/cgisirsi/?ps=78G05ei64n/北大中心馆/24230388/63/63/X/BLASTOFF"
+                    class="rootbar">
+                    请求清单</a></li>
+
+
+
+
+
+        </ul>
+    </div>
+
+
+
+    <script language="JavaScript" type="text/javascript">
+        setLocalizedValue("CREATE_A_LIST", "Create a list before attempting to keep an item");
+    </script>
+    <!--  Copyright (c) 2000 - 2014, SirsiDynix - Buttons for Item View page, state #5. -->
+    <div class="secondary_header_menu_container">
+        <h2>Contextual Navigation Menu</h2>
+        <ul class="menu">
+            <li class="menu_link">
+                <!-- Go back button --><a href="/uhtbin/cgisirsi/?ps=P10jF9JDo2/北大中心馆/24230388/2/9" title="返回">返回</a>
+            </li>
+            <!--
+    <li class="menu_link">
+      <a href="/uhtbin/cgisirsi/?ps=Ylb1UKOTKj/北大中心馆/24230388/2/9" title="返回" alt="返回">GO BACK</a>
+    </li>
+     -->
+            <li class="menu_link">
+                <!-- Help button -->
+                <script language="javascript" type="text/javascript">
+                    //<![CDATA[
+                    put_help_button('Chinese', '帮助', 'full_details');
+    //]]>
+                </script>
+            </li>
+
+            <li class="menu_link"><a href="/uhtbin/cgisirsi/?ps=WCbrEsE3NT/北大中心馆/24230388/49" title="新的检索">新的检索</a></li>
+
+            <!-- Backward button -->
+            <li class="menu_link"><a
+                    href="javascript:document.item_view.form_type.value = 'SCROLL^B'; document.item_view.submit()">后退</a>
+            </li>
+
+            <!-- Forward button -->
+            <li class="menu_link"><a
+                    href="javascript:document.item_view.form_type.value = 'SCROLL^F'; document.item_view.submit()">向前</a>
+            </li>
+
+            <!-- Cross Reference button -->
+
+            <!-- Text Archive Button -->
+
+            <!-- View Options Button -->
+            <li class="menu_link"><a
+                    href="javascript:document.item_view.form_type.value = 'VOPTIONS'; document.item_view.submit()">查看选项</a>
+            </li>
+
+            <!-- Capture Button -->
+            <li class="menu_link"><a
+                    href="javascript:document.item_view.form_type.value = 'CAPTURE'; document.item_view.submit()">打印/邮寄/保存</a>
+            </li>
+
+
+            <!-- hidden ebook processing -->
+
+            <!-- gateway's custom buttons -->
+
+
+
+
+
+
+            <li class="menu_link"><a href="/uhtbin/cgisirsi/?ps=suMEq7jwkF/北大中心馆/24230388/163" title="退出登录"
+                    target="_top">退出登录</a></li>
+            <li class="menu_link"><a name="skipnav"></a></li>
+        </ul>
+    </div>
+
+    <script language="javascript" type="text/javascript">
+        SdCommon.setPrefix('ptp');
+
+        SdEcValues.setParameter("ordinal", '1');
+        SdEcValues.setParameter('isbn', '9787536094239');
+        SdEcValues.setParameter('use-syndetic-enhanced-content', '0');
+        SdEcValues.setParameter('syndetics-base-url', 'http://www.syndetics.com/index.aspx?');
+        SdEcValues.setParameter('novelist-base-url', 'http://eit.ebscohost.com/');
+        SdEcValues.setParameter('syndetics-rel-path', '');
+        SdEcValues.setParameter('novelist-rel-path', '');
+        SdEcValues.setParameter('syndetics-client-code', '');
+        SdEcValues.setParameter('use-chili-enhanced-content', '0');
+        SdEcValues.setParameter("language-name", 'CHINESE');
+        SdEcValues.setParameter('chilifresh-languages', '');
+        SdEcValues.setParameter("chilifresh-account", '');
+        SdEcValues.setParameter("chilifresh-profile", 'ALL ');
+        SdEcValues.setParameter("chilifresh-js-url", '/Js/sd-ec-elibrary.js');
+        SdEcValues.setParameter("defer-chili-data-load", '');
+        SdEcValues.setParameter('use-novelist-enhanced-content', '0');
+        SdEcValues.setParameter('use-novelist-authors', '0');
+        SdEcValues.setParameter('use-novelist-titles', '1');
+        SdEcValues.setParameter('use-novelist-related', '1');
+        SdEcValues.setParameter("novelist-prof", '');
+        SdEcValues.setParameter("novelist-pwd", '');
+        SdEcValues.setParameter('show-content-regions', '');
+
+        SdEcValues.setParameter("down-gif", '/WebCat_Images/Chinese/Other/MiscD/admin-icon-expand.png');
+        SdEcValues.setParameter("up-gif", '/WebCat_Images/Chinese/Other/MiscD/admin-icon-collapse.png');
+        SdEcValues.setVariable('webcat-url', '/uhtbin/cgisirsi/?ps=g3cqR5HNQE/北大中心馆');
+        SdEcValues.setParameter("session", '24230388');
+        SdEcValues.setParameter('isbns', '9787536094239');
+
+        SdEcValues.setParameter("contentcfg-author-bio", '');
+        SdEcValues.setParameter("contentcfg-review", '');
+        SdEcValues.setParameter("contentcfg-blreview", '');
+        SdEcValues.setParameter("contentcfg-chreview", '');
+        SdEcValues.setParameter("contentcfg-ljreview", '');
+        SdEcValues.setParameter("contentcfg-sljreview", '');
+        SdEcValues.setParameter("contentcfg-summary", '');
+        SdEcValues.setParameter("contentcfg-toc", '');
+
+        SdEcValues.setParameter("disp-content-author-bio", '0');
+        SdEcValues.setParameter("disp-content-review", '0');
+        SdEcValues.setParameter("disp-content-blreview", '0');
+        SdEcValues.setParameter("disp-content-chreview", '0');
+        SdEcValues.setParameter("disp-content-ljreview", '0');
+        SdEcValues.setParameter("disp-content-sljreview", '0');
+        SdEcValues.setParameter("disp-content-summary", '0');
+        SdEcValues.setParameter("disp-content-toc", '0');
+
+        SdEcValues.setTranslation("Author Notes", "作者传记");
+        SdEcValues.setTranslation("Booklist Review", "Booklist Review");
+        SdEcValues.setTranslation("CHOICE Review", "CHOICE Review");
+        SdEcValues.setTranslation("Library Journal Review", "图书馆期刊评论");
+        SdEcValues.setTranslation("Publishers Weekly Review", "Publishers Weekly Review");
+        SdEcValues.setTranslation("School Library Journal Review", "School Library Journal Review");
+        SdEcValues.setTranslation("Table of Contents", "目次");
+        SdEcValues.setTranslation("Summary", "概要");
+
+        SdEcValues.setTranslation("VIEW_ENRICHMENT", "");
+        SdEcValues.setTranslation("to read more see \"A Look Inside\"", "to read more see \"{VIEW_ENRICHMENT}\"");
+
+        SdEcValues.setTranslation("Click a title to expand (see) an article - Click the title again to contract (hide) the article", "Click a title to expand (see) an article - Click the title again to contract (hide) the article");
+
+        SdEcValues.setTranslation("Author Read-alikes", "Author Read-alikes")
+        SdEcValues.setTranslation("Feature Articles", "Feature Articles")
+        SdEcValues.setTranslation("Curricular Connections", "Curricular Connections")
+        SdEcValues.setTranslation("Author Biographies", "Author Biographies")
+        SdEcValues.setTranslation("Recommended Reads", "Recommended Reads")
+        SdEcValues.setTranslation("What We're Reading", "What We're Reading")
+        SdEcValues.setTranslation("Award Winners", "Award Winners")
+        SdEcValues.setTranslation("Other Articles", "Other Articles")
+
+        SdEcValues.setTranslation("Similar Authors", "相似作者")
+        SdEcValues.setTranslation("Similar Titles", "相似题名");
+        SdEcValues.setTranslation("Similar Loading", "Loading...");
+        SdEcValues.setTranslation("Similar Nothing Found", "Nothing similar found");
+        SdEcValues.setTranslation("Collapse Icon", "折叠图标");
+        SdEcValues.setTranslation("Expand Icon", "Expand Icon");
+    </script>
+
+
+
+    <div class="columns_container">
+        <div class="column pct75 details_left_column">
+            <form name="item_view" method="post" action="/uhtbin/cgisirsi/?ps=EWXNrTDLE7/北大中心馆/24230388/13">
+                <!-- Print any WEBIMAGE tags that should appear before the list of tags -->
+
+                <!-- begin routine to discover/discern enrichment types for this item (also netLibrary, URL and DMA -->
+                <!-- counter for enr types that builds content in iB/iL -->
+                <!-- counter for enr types that open up a new window -->
+
+
+                <!-- show image links for URL or DMA tags (placed with enrichment) -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- end of disc_enrich.h -->
+                <!-- end routine -->
+                <!-- Find appropriate call number to display from list of call numbers -->
+                <input type="hidden" name="first_hit" value="2" />
+                <input type="hidden" name="last_hit" value="2" />
+                <div class="content_container searchsum_hits">
+                    <div class="content">
+                        <p>
+                            <!-- Print the message, if one exists (except for "volume does not exist",
+        "This item has been marked lost" and "This item is assumed lost") -->
+                            记录
+                            2
+                            of
+                            1629
+                            检索词
+                            <!--  Copyright (c) 2000 - 2009, SirsiDynix - e-Library Catalog Keyword search summary -->
+                            <!-- Print the search summary -->
+                            <strong>
+
+
+
+
+
+
+
+                            </strong>
+                        </p>
+                        <!-- View Options Button -->
+                        <!-- <a class="display_options" href="javascript:document.item_view.form_type.value = 'VOPTIONS'; document.item_view.submit()">查看选项</a> don't display "change display"  zhouyg-->
+                    </div>
+                </div>
+                <div class="content_container item_details">
+                    <div class="content">
+                        <h3>Item Details</h3>
+                        <script language="javascript" type="text/javascript">
+                            SdEcPageInterface.signalEvent("top-of-hit-list", { 'hit-list-isbn-list': ['9787536094239'] });
+                        </script>
+                        <!--  Copyright (c)  2008 - 2010, SirsiDynix - Unicorn Hit Permanent Keep Button  -->
+
+                        <ul class="itemservices">
+                            <li class="hit_list_keepremove">
+                                <script language="javascript" type="text/javascript">
+                                    //<![CDATA[
+                                    put_keepremove_button('4461938', '选取', '/WebCat_Images/Chinese/Other/MiscD', '选取', '/uhtbin/cgisirsi/?ps=MiiLaHxMaJ/北大中心馆', '24230388', '删除');
+          //]]>
+                                </script>
+                            </li>
+
+
+                            <!-- eLibrary configured with content -->
+                            <li id="rating" class='chili_review'></li>
+                            <li class="hidden">
+                                <script language="javascript" type="text/javascript">
+                                    SdEcPageInterface.populateContentRegion('rating', '/Js/sd-detail-rating.xml', false);
+                                </script>
+                            </li>
+
+                            <!-- Only show the HOLD buttons if no E-BOOKs exist -->
+                            <a href="/uhtbin/cgisirsi/?ps=Cs8EhAbaH3/北大中心馆//108"> </a>
+                            <li><a href="/uhtbin/cgisirsi/?ps=c2f3DAxbI0/北大中心馆/24230388/108">预约</a></li>
+                            <!-- hold link for all copies -->
+                            <!-- hold icon -->
+
+
+                            <!-- Only show the BUYNOW  buttons if no E-BOOKs exist -->
+                            <!-- optionally show the BUYNOW buttons if no copies available -->
+                            <!-- en ISBN -->
+                            <li><a href='http://search.dangdang.com/search_pub.php?key=9787536094239'
+                                    target="_blank">现在购买</a></li>
+                            <!-- Km ISBN -->
+                            <!-- BUYNOW -->
+                            <!-- BUYNOW only if not available -->
+                            <!-- EBOOK -->
+
+                            <!-- only use if LIKESEARCH type is not set to EXACT -->
+                            <!--  Copyright (c) 2000 - 2010, SirsiDynix -  Related Search Button - These variables must be defined before including this file: - ENTRY_TYPE - tag entry type character to build the buttons for. - LINK_NAME - name of href link. -->
+
+
+
+
+
+                            <!-- Single term in tag -->
+
+
+
+
+
+
+                            <!-- Single term in tag -->
+
+
+
+
+
+
+                            <li> <a class="related"
+                                    href="/uhtbin/cgisirsi/?ps=6KyCAFkJbQ/北大中心馆/24230388/18/XAU/XAUTHOR/%E9%B2%81%E8%BF%85,+OR+%E9%B2%81%E8%BF%85%E5%85%88%E7%94%9F%E7%BA%AA%E5%BF%B5%E5%A7%94%E5%91%98%E4%BC%9A">查找该作者其它作品</a>
+                            </li>
+
+
+                            <!--  Copyright (c) 2000 - 2010, SirsiDynix -  Related Search Button - These variables must be defined before including this file: - ENTRY_TYPE - tag entry type character to build the buttons for. - LINK_NAME - name of href link. -->
+
+
+
+
+
+                            <!-- Single term in tag -->
+
+
+
+
+
+
+                            <li> <a class="related"
+                                    href="/uhtbin/cgisirsi/?ps=sPP7IAV1mg/北大中心馆/24230388/18/XSU/XSUBJECT/%E9%B2%81%E8%BF%85%E8%91%97%E4%BD%9C">查找本主题的其它作品</a>
+                            </li>
+
+
+
+                            <!-- Find appropriate call number to display from list of call numbers -->
+
+
+
+                            <!-- Print call number browse search-->
+                            <li><a
+                                    href="/uhtbin/cgisirsi/?ps=Klr0zGsQaf/北大中心馆/24230388/19/I210.1^2F2.2(20)/%E5%8C%97%E5%A4%A7%E4%B8%AD%E5%BF%83%E9%A6%86|NO|%E4%B8%AD%E5%9B%BE%E6%B3%95_C">书架上邻近的馆藏</a>
+                            </li>
+
+                            <!-- Print page of duxiu  add by zhouyg-->
+                            <li>
+                                <iframe id="duxiuframe" border="0" vspace="0" hspace="0" marginwidth="0"
+                                    marginheight="0" framespacing="0" frameborder="0" scrolling="no" width="75"
+                                    height="110" src="http://www1.lib.pku.edu.cn/doc/book.jpg">
+                                </iframe>
+                                <script>
+                                    var Visbn;
+                                    Visbn = '9787536094239'.split(",");
+                                    var Dframe = document.getElementById('duxiuframe');
+                                    Dframe.src = "http://book2.duxiu.com/opaclink.jsp?isbn=" + Visbn[0] + "&bname=" + '鲁迅全集 鲁迅先生纪念委员会编 鲁迅著' + "&type=1&ecode=gbk&util=487&&enc=5F6029B4B32CAFB79931FC72E0682DA4";
+
+                                </script>
+                            </li>
+
+
+
+                        </ul>
+                        <!-- show tabbed view if suported by browser and the environment is configured to do so -->
+                        <ul id="detail-tabs-container" class="tabs_container pct70">
+                            <!-- show tabs for the panel -->
+                            <!--  Build this tab only copies exist -->
+
+                            <li class="detail_item_information">
+
+                                馆藏详细信息
+
+                            </li>
+
+
+
+                            <!-- do not display a look inside tab -->
+
+
+                            <li class="detail_marc_record"> 书目相关信息 </li>
+
+
+                            <!-- do not display related articles tab -->
+
+
+
+                        </ul> <!-- end tabholder span -->
+                        <!-- end conditional to show the tabs -->
+
+                        <ul class="tab_panels pct70 detail_page">
+
+
+
+                            <li id="detail_item_information">
+                                <h4>Bibliographic Information</h4>
+
+
+
+
+                                <dl>
+                                    <dt class="title_label">题名</dt>
+                                    <dd class="title">
+                                        鲁迅全集 鲁迅先生纪念委员会编 鲁迅著
+
+
+
+                                    </dd>
+
+                                    <dt class="author_label">著者</dt>
+                                    <dd class="author">
+                                        <!-- Print the author, if one exists -->
+                                        鲁迅, 1881-1936 著
+                                    </dd>
+                                    <!-- extract requested bib data -->
+                                    <dt class="publisher_label">出版者:</dt>
+                                    <dd class="publisher">花城出版社</dd>
+                                    <!-- Ju data -->
+                                    <!-- iteminfo option1 -->
+
+                                    <dt class="publishing_date_label">出版日期:</dt>
+                                    <dd class="publishing_date">2021</dd>
+
+                                    <!-- Jv data -->
+                                    <!-- iteminfo option2 -->
+
+                                    <dt class="pages_label">附注</dt>
+                                    <dd class="pages">20册</dd>
+                                    <!-- Jt data -->
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- iteminfo option1 -->
+
+                                    <!-- iteminfo option2 -->
+
+                                    <!-- iteminfo option3 -->
+                                    <!-- list LT -->
+                                    <!-- Print ISBN number, if exists -->
+                                    <dt class="isbn_label">ISBN:</dt>
+                                    <dd class="isbn">9787536094239</dd>
+
+
+                                    <!--list_of_available/holdings -->
+                                    <dt class="copy_info_label">
+                                        馆藏分布状况:
+
+                                    </dt>
+                                    <dd class="copy_info">
+                                        <!-- show if catalog or call-num item view -->
+                                        17 件馆藏在架上 北大中心馆.<br />
+                                    </dd>
+                                </dl>
+
+                                <ul class="enriched_content">
+                                    <li class="enrichment_container">
+                                        <!-- dynamic content lookup -->
+
+                                    </li>
+                                </ul>
+
+                                <ul class="enrichment_container">
+                                    <li id="detail-item-content" class="enriched_content"></li>
+                                    <li>
+                                        <script language="javascript" type="text/javascript">
+                                            SdEcPageInterface.populateContentRegion('detail-item-content', '/Js/sd-detail-item-tab.xml', '');
+                                        </script>
+                                    </li>
+                                    <!-- container for the expansion of similar authors and titles -->
+                                    <ul>
+                                        <li id="ncdiv1" class="hidden">
+                                            <ul id="similar1" class="hidden"></ul>
+                                        </li>
+                                    </ul>
+                                    <li id="detail-chili-content" class="chili_iframe"></li>
+                                    <li>
+                                        <script language="javascript" type="text/javascript">
+                                            SdEcPageInterface.populateContentRegion('detail-chili-content', '/Js/sd-detail-chili.xml', '');
+                                        </script>
+                                    </li>
+                                </ul>
+
+                                <ul>
+                                    <!-- show if catalog or call-num item view -->
+                                    <li>
+                                        <!-- check for the existence of MARC Holdings data -->
+
+                                    </li>
+                                    <!-- show holdings -->
+                                    <li>
+                                        <!--  Copyright (c) 1996 - 2009, SirsiDynix - Copy Holdings for a Single Item View -->
+                                        <a name="holdings"></a>
+
+                                        <table border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <!-- Print library header line -->
+                                                <td colspan=3 class="enrichheader">馆藏</td>
+                                                <!-- View Holdings Button -->
+                                                <!-- <td colspan=2 valign=center><a  href="javascript:document.item_view.form_type.value = 'VOPTIONS'; document.item_view.submit()">查看选项</a></td> zhouyg -->
+                                            </tr>
+                                            <!-- holdings allowed -->
+                                            <!-- new library -->
+                                            <tr>
+                                                <!-- Print library header line -->
+                                                <td class="holdingsheader" colspan="4" align="left">
+                                                    北大中心馆
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="holdingsheader" align="left">索书号</td>
+                                                <td class="holdingsheader" align="center">复本号</td>
+                                                <td class="holdingsheader" align="left">馆藏类型</td>
+                                                <td class="holdingsheader" align="left">馆藏位置</td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <!-- Number of copies -->
+                                                <!-- Start new callnum -->
+                                                <td class="holdingslist" align="left">I210.1/2.2(20)</td>
+
+                                                <td class="holdingslist" align="center" NORTL>1</td>
+                                                <td class="holdingslist" align="left">
+                                                    中文图书
+                                                </td>
+                                                <td class="holdingslist" align="left">
+                                                    库本阅览室(西区109)
+                                                </td>
+
+
+                                            </tr>
+
+
+                                            <!-- Boundwith holdings -->
+
+
+                                            <!-- holdings allowed -->
+
+
+                                            <tr>
+                                                <!-- Number of copies -->
+                                                <!-- Start new callnum -->
+                                                <td class="holdingslist" align="left">I210.1/2.2(19)</td>
+
+                                                <td class="holdingslist" align="center" NORTL>1</td>
+                                                <td class="holdingslist" align="left">
+                                                    中文图书
+                                                </td>
+                                                <td class="holdingslist" align="left">
+                                                    库本阅览室(西区109)
+                                                </td>
+
+
+                                            </tr>
+
+
+                                            <!-- Boundwith holdings -->
+
+
+                                            <!-- holdings allowed -->
+
+
+                                            <tr>
+                                                <!-- Number of copies -->
+                                                <!-- Start new callnum -->
+                                                <td class="holdingslist" align="left">I210.1/2.2(18)</td>
+
+                                                <td class="holdingslist" align="center" NORTL>1</td>
+                                                <td class="holdingslist" align="left">
+                                                    中文图书
+                                                </td>
+                                                <td class="holdingslist" align="left">
+                                                    库本阅览室(西区109)
+                                                </td>
+
+
+                                            </tr>
+
+
+                                            <!-- Boundwith holdings -->
+
+
+                                            <!-- holdings allowed -->
+
+
+                                            <tr>
+                                                <!-- Number of copies -->
+                                                <!-- Start new callnum -->
+                                                <td class="holdingslist" align="left">I210.1/2.2(17)</td>
+
+                                                <td class="holdingslist" align="center" NORTL>1</td>
+                                                <td class="holdingslist" align="left">
+                                                    中文图书
+                                                </td>
+                                                <td class="holdingslist" align="left">
+                                                    库本阅览室(西区109)
+                                                </td>
+
+
+                                            </tr>
+
+
+                                            <!-- Boundwith holdings -->
+
+
+                                            <!-- holdings allowed -->
+
+
+                                            <tr>
+                                                <!-- Number of copies -->
+                                                <!-- Start new callnum -->
+                                                <td class="holdingslist" align="left">I210.1/2.2(16)</td>
+
+                                                <td class="holdingslist" align="center" NORTL>1</td>
+                                                <td class="holdingslist" align="left">
+                                                    中文图书
+                                                </td>
+                                                <td class="holdingslist" align="left">
+                                                    库本阅览室(西区109)
+                                                </td>
+
+
+                                            </tr>
+
+
+                                            <!-- Boundwith holdings -->
+
+
+                                            <!-- holdings allowed -->
+
+
+                                            <tr>
+                                                <!-- Number of copies -->
+                                                <!-- Start new callnum -->
+                                                <td class="holdingslist" align="left">I210.1/2.2(15)</td>
+
+                                                <td class="holdingslist" align="center" NORTL>1</td>
+                                                <td class="holdingslist" align="left">
+                                                    中文图书
+                                                </td>
+                                                <td class="holdingslist" align="left">
+                                                    库本阅览室(西区109)
+                                                </td>
+
+
+                                            </tr>
+
+
+                                            <!-- Boundwith holdings -->
+
+
+                                            <!-- holdings allowed -->
+
+
+                                            <tr>
+                                                <!-- Number of copies -->
+                                                <!-- Start new callnum -->
+                                                <td class="holdingslist" align="left">I210.1/2.2(14)</td>
+
+                                                <td class="holdingslist" align="center" NORTL>1</td>
+                                                <td class="holdingslist" align="left">
+                                                    中文图书
+                                                </td>
+                                                <td class="holdingslist" align="left">
+                                                    库本阅览室(西区109)
+                                                </td>
+
+
+                                            </tr>
+
+
+                                            <!-- Boundwith holdings -->
+
+
+                                            <!-- holdings allowed -->
+
+
+                                            <tr>
+                                                <!-- Number of copies -->
+                                                <!-- Start new callnum -->
+                                                <td class="holdingslist" align="left">I210.1/2.2(13)</td>
+
+                                                <td class="holdingslist" align="center" NORTL>1</td>
+                                                <td class="holdingslist" align="left">
+                                                    中文图书
+                                                </td>
+                                                <td class="holdingslist" align="left">
+                                                    库本阅览室(西区109)
+                                                </td>
+
+
+                                            </tr>
+
+
+                                            <!-- Boundwith holdings -->
+
+
+                                            <!-- holdings allowed -->
+
+
+                                            <tr>
+                                                <!-- Number of copies -->
+                                                <!-- Start new callnum -->
+                                                <td class="holdingslist" align="left">I210.1/2.2(12)</td>
+
+                                                <td class="holdingslist" align="center" NORTL>1</td>
+                                                <td class="holdingslist" align="left">
+                                                    中文图书
+                                                </td>
+                                                <td class="holdingslist" align="left">
+                                                    库本阅览室(西区109)
+                                                </td>
+
+
+                                            </tr>
+
+
+                                            <!-- Boundwith holdings -->
+
+
+                                            <!-- holdings allowed -->
+
+
+                                            <tr>
+                                                <!-- Number of copies -->
+                                                <!-- Start new callnum -->
+                                                <td class="holdingslist" align="left">I210.1/2.2(11)</td>
+
+                                                <td class="holdingslist" align="center" NORTL>1</td>
+                                                <td class="holdingslist" align="left">
+                                                    中文图书
+                                                </td>
+                                                <td class="holdingslist" align="left">
+                                                    库本阅览室(西区109)
+                                                </td>
+
+
+                                            </tr>
+
+
+                                            <!-- Boundwith holdings -->
+
+
+                                            <!-- holdings allowed -->
+
+
+                                            <tr>
+                                                <!-- Number of copies -->
+                                                <!-- Start new callnum -->
+                                                <td class="holdingslist" align="left">I210.1/2.2(10)</td>
+
+                                                <td class="holdingslist" align="center" NORTL>1</td>
+                                                <td class="holdingslist" align="left">
+                                                    中文图书
+                                                </td>
+                                                <td class="holdingslist" align="left">
+                                                    库本阅览室(西区109)
+                                                </td>
+
+
+                                            </tr>
+
+
+                                            <!-- Boundwith holdings -->
+
+
+                                            <!-- holdings allowed -->
+
+
+                                            <tr>
+                                                <!-- Number of copies -->
+                                                <!-- Start new callnum -->
+                                                <td class="holdingslist" align="left">I210.1/2.2(9)</td>
+
+                                                <td class="holdingslist" align="center" NORTL>1</td>
+                                                <td class="holdingslist" align="left">
+                                                    中文图书
+                                                </td>
+                                                <td class="holdingslist" align="left">
+                                                    库本阅览室(西区109)
+                                                </td>
+
+
+                                            </tr>
+
+
+                                            <!-- Boundwith holdings -->
+
+
+                                            <!-- holdings allowed -->
+
+
+                                            <tr>
+                                                <!-- Number of copies -->
+                                                <!-- Start new callnum -->
+                                                <td class="holdingslist" align="left">I210.1/2.2(8)</td>
+
+                                                <td class="holdingslist" align="center" NORTL>1</td>
+                                                <td class="holdingslist" align="left">
+                                                    中文图书
+                                                </td>
+                                                <td class="holdingslist" align="left">
+                                                    库本阅览室(西区109)
+                                                </td>
+
+
+                                            </tr>
+
+
+                                            <!-- Boundwith holdings -->
+
+
+                                            <!-- holdings allowed -->
+
+
+                                            <tr>
+                                                <!-- Number of copies -->
+                                                <!-- Start new callnum -->
+                                                <td class="holdingslist" align="left">I210.1/2.2(7)</td>
+
+                                                <td class="holdingslist" align="center" NORTL>1</td>
+                                                <td class="holdingslist" align="left">
+                                                    中文图书
+                                                </td>
+                                                <td class="holdingslist" align="left">
+                                                    库本阅览室(西区109)
+                                                </td>
+
+
+                                            </tr>
+
+
+                                            <!-- Boundwith holdings -->
+
+
+                                            <!-- holdings allowed -->
+
+
+                                            <tr>
+                                                <!-- Number of copies -->
+                                                <!-- Start new callnum -->
+                                                <td class="holdingslist" align="left">I210.1/2.2(6)</td>
+
+                                                <td class="holdingslist" align="center" NORTL>1</td>
+                                                <td class="holdingslist" align="left">
+                                                    中文图书
+                                                </td>
+                                                <td class="holdingslist" align="left">到期: 2022/6/2 (已有预约数：1)</td>
+
+
+                                            </tr>
+
+
+                                            <!-- Boundwith holdings -->
+
+
+                                            <!-- holdings allowed -->
+
+
+                                            <tr>
+                                                <!-- Number of copies -->
+                                                <!-- Start new callnum -->
+                                                <td class="holdingslist" align="left">I210.1/2.2(5)</td>
+
+                                                <td class="holdingslist" align="center" NORTL>1</td>
+                                                <td class="holdingslist" align="left">
+                                                    中文图书
+                                                </td>
+                                                <td class="holdingslist" align="left">
+                                                    库本阅览室(西区109)
+                                                </td>
+
+
+                                            </tr>
+
+
+                                            <!-- Boundwith holdings -->
+
+
+                                            <!-- holdings allowed -->
+
+
+                                            <tr>
+                                                <!-- Number of copies -->
+                                                <!-- Start new callnum -->
+                                                <td class="holdingslist" align="left">I210.1/2.2(4)</td>
+
+                                                <td class="holdingslist" align="center" NORTL>1</td>
+                                                <td class="holdingslist" align="left">
+                                                    中文图书
+                                                </td>
+                                                <td class="holdingslist" align="left">
+                                                    库本阅览室(西区109)
+                                                </td>
+
+
+                                            </tr>
+
+
+                                            <!-- Boundwith holdings -->
+
+
+                                            <!-- holdings allowed -->
+
+
+                                            <tr>
+                                                <!-- Number of copies -->
+                                                <!-- Start new callnum -->
+                                                <td class="holdingslist" align="left">I210.1/2.2(3)</td>
+
+                                                <td class="holdingslist" align="center" NORTL>1</td>
+                                                <td class="holdingslist" align="left">
+                                                    中文图书
+                                                </td>
+                                                <td class="holdingslist" align="left">
+                                                    库本阅览室(西区109)
+                                                </td>
+
+
+                                            </tr>
+
+
+                                            <!-- Boundwith holdings -->
+
+
+                                            <!-- holdings allowed -->
+
+
+                                            <tr>
+                                                <!-- Number of copies -->
+                                                <!-- Start new callnum -->
+                                                <td class="holdingslist" align="left">I210.1/2.2(2)</td>
+
+                                                <td class="holdingslist" align="center" NORTL>1</td>
+                                                <td class="holdingslist" align="left">
+                                                    中文图书
+                                                </td>
+                                                <td class="holdingslist" align="left">到期: 2022/9/13 (已有预约数：1)</td>
+
+
+                                            </tr>
+
+
+                                            <!-- Boundwith holdings -->
+
+
+                                            <!-- holdings allowed -->
+
+
+                                            <tr>
+                                                <!-- Number of copies -->
+                                                <!-- Start new callnum -->
+                                                <td class="holdingslist" align="left">I210.1/2.2(1)</td>
+
+                                                <td class="holdingslist" align="center" NORTL>1</td>
+                                                <td class="holdingslist" align="left">
+                                                    中文图书
+                                                </td>
+                                                <td class="holdingslist" align="left">
+                                                    在转运中
+                                                </td>
+
+
+                                            </tr>
+
+
+                                            <!-- Boundwith holdings -->
+
+
+
+                                            <!-- Only show the HOLD buttons if no E-BOOKs exist -->
+
+
+
+
+
+                                            <tr>
+                                                <td colspan="3">&nbsp;</td>
+                                                <td><a class="link-button"
+                                                        href="/uhtbin/cgisirsi/?ps=TpSC9J1y18/北大中心馆/24230388/108">预约</a>
+                                                </td>
+                                            </tr>
+                                    </li>
+                                    <!-- hold link for all copies -->
+
+                                    <!-- hold icon -->
+
+
+                                    </table>
+                                    <style>
+                                        .link-button {
+                                            background: #00af39 none repeat scroll 0 0;
+                                            border-radius: 5px;
+                                            color: #ffffff !important;
+                                            display: block;
+                                            padding: 6px 15px;
+                                            margin-top: 10px;
+                                            text-align: center;
+                                            text-decoration: none;
+                                            transition: background-color 0.25s linear 0s;
+                                            white-space: nowrap;
+                                            width: 60px;
+                                        }
+
+                                        .link-button:hover {
+                                            background: #1e8bc3 none repeat scroll 0 0;
+                                            color: #ffffff;
+                                            text-decoration: none;
+                                        }
+                                    </style>
+                            </li>
+                            <li>
+                                <!--  Copyright (c)  2008 - 2010, SirsiDynix - Check for additional syndetic content  -->
+
+                            </li>
+
+
+                        </ul>
+
+
+                        </li>
+
+
+                        <!-- do not display a look inside tab -->
+
+
+
+                        <!-- do not display related articles tab -->
+
+
+                        <li id="detail_marc_record" style="display:none;">
+                            <h4>MARC Record</h4>
+                            <!-- don't show the repeating bib info unless using single-item tabbed view -->
+                            <div class="bibinfo">
+                                <!-- displays, author, title, etc on all panels -->
+                                <!-- Print the title, if one exists -->
+                                <strong>鲁迅全集 鲁迅先生纪念委员会编 鲁迅著</strong>
+
+
+
+                                <br />
+
+
+                                <!-- Print the author, if one exists -->
+                                鲁迅, 1881-1936 著<br />
+
+                            </div>
+
+
+                            ﻿
+                            <script>
+                                var sirsiCD = 0;
+                                var listDC = 0;< !--mafz--->
+    var library = 0
+                            </script>
+                            <a name="marc_data"></a>
+
+
+                            <!-- The View Unformatted and Regular Views have been separated b/c of an additional column that has to appear for the indicators. The first conditional is to check to show unformatted, then the tables are then constructed using the list code. -->
+                            <!-- view formatted -->
+
+                            <!-- Print the tags -->
+                            <dl>
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    记录处理时间:
+                                    <script>
+                                        if ('记录处理时间'.indexOf("载体形态") >= 0 || '记录处理时间'.indexOf("稽核项") >= 0) {
+                                            if ('20211231105412.2'.indexOf("CD") >= 0 || '20211231105412.2'.indexOf("cd-rom") >= 0 ||
+                                                '20211231105412.2'.indexOf("dvd") >= 0 || '20211231105412.2'.indexOf("minidisc") >= 0
+                                                || '20211231105412.2'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('记录处理时间'.indexOf("图书馆") >= 0) {
+                                            if ('20211231105412.2'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    20211231105412.2
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    ISBN:
+                                    <script>
+                                        if ('ISBN'.indexOf("载体形态") >= 0 || 'ISBN'.indexOf("稽核项") >= 0) {
+                                            if ('978-7-5360-9423-9 CNY598.00 (20册)'.indexOf("CD") >= 0 || '978-7-5360-9423-9 CNY598.00 (20册)'.indexOf("cd-rom") >= 0 ||
+                                                '978-7-5360-9423-9 CNY598.00 (20册)'.indexOf("dvd") >= 0 || '978-7-5360-9423-9 CNY598.00 (20册)'.indexOf("minidisc") >= 0
+                                                || '978-7-5360-9423-9 CNY598.00 (20册)'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('ISBN'.indexOf("图书馆") >= 0) {
+                                            if ('978-7-5360-9423-9 CNY598.00 (20册)'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    978-7-5360-9423-9 CNY598.00 (20册)
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- "Likeable" tag -->
+
+                                <dt class="viewmarctags">
+                                    题名:
+                                </dt>
+                                <dd class="viewmarctags">
+                                    <!-- Single term in tag -->
+                                    <a
+                                        href="/uhtbin/cgisirsi/?ps=IMVtDvnLUp/北大中心馆/24230388/18/XC200/XTITLE/%E9%B2%81%E8%BF%85%E5%85%A8%E9%9B%86">鲁迅全集
+                                        鲁迅先生纪念委员会编 鲁迅著</a>
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    出版信息:
+                                    <script>
+                                        if ('出版信息'.indexOf("载体形态") >= 0 || '出版信息'.indexOf("稽核项") >= 0) {
+                                            if ('广州 花城出版社 2021'.indexOf("CD") >= 0 || '广州 花城出版社 2021'.indexOf("cd-rom") >= 0 ||
+                                                '广州 花城出版社 2021'.indexOf("dvd") >= 0 || '广州 花城出版社 2021'.indexOf("minidisc") >= 0
+                                                || '广州 花城出版社 2021'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('出版信息'.indexOf("图书馆") >= 0) {
+                                            if ('广州 花城出版社 2021'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    广州 花城出版社 2021
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    稽核项:
+                                    <script>
+                                        if ('稽核项'.indexOf("载体形态") >= 0 || '稽核项'.indexOf("稽核项") >= 0) {
+                                            if ('20册 图, 肖像, 摹真 24cm'.indexOf("CD") >= 0 || '20册 图, 肖像, 摹真 24cm'.indexOf("cd-rom") >= 0 ||
+                                                '20册 图, 肖像, 摹真 24cm'.indexOf("dvd") >= 0 || '20册 图, 肖像, 摹真 24cm'.indexOf("minidisc") >= 0
+                                                || '20册 图, 肖像, 摹真 24cm'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('稽核项'.indexOf("图书馆") >= 0) {
+                                            if ('20册 图, 肖像, 摹真 24cm'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    20册 图, 肖像, 摹真 24cm
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    目次备注:
+                                    <script>
+                                        if ('目次备注'.indexOf("载体形态") >= 0 || '目次备注'.indexOf("稽核项") >= 0) {
+                                            if ('第一卷, 坟 呐喊 野草 ; 第二卷, 热风 彷徨 朝花夕拾 故事新编; 第三卷, 华盖集 华盖集续编 而已集 ; 第四卷, 三闲集 二心集 伪自由书 ; 第五卷, 南腔北调集 准风月谈 花边文学 ; 第六卷, 且介亭杂文 且介亭杂文二编 且介亭杂文末编 ; 第七卷, 两地书 集外集 集外集拾遗 ; 第八卷, 会稽郡故书杂集 古小说钩沉 ; 第九卷, 嵇康集 中国小说史略 ; 第十卷, 小说旧闻钞 唐宋传奇集 汉文学史纲要 ; 第十一卷, 月界旅行 地底旅行 域外小说集 现代小说译丛 现代日本小说集 工人绥惠略夫 ; 第十二卷, 一个青年的梦 爱罗先珂童话集 桃色的云 ; 第十三卷, 苦闷的象征 出了象牙之塔 思想·山水·人物 ; 第十四卷, 小约翰 小彼得 表 俄罗斯的童话 药用植物 ; 第十五卷, 近代美术史潮论 艺术论 ; 第十六卷, 壁下译丛 译丛补 ; 第十七卷, 艺术论 现代新兴文学的诸问题 文艺与批评 文艺政策 ; 第十八卷, 十月 毁灭 山民牧唱 坏孩子和别的奇闻 ; 第十九卷, 竖琴 一天的工作 ; 第二十卷, 死魂灵.'.indexOf("CD") >= 0 || '第一卷, 坟 呐喊 野草 ; 第二卷, 热风 彷徨 朝花夕拾 故事新编; 第三卷, 华盖集 华盖集续编 而已集 ; 第四卷, 三闲集 二心集 伪自由书 ; 第五卷, 南腔北调集 准风月谈 花边文学 ; 第六卷, 且介亭杂文 且介亭杂文二编 且介亭杂文末编 ; 第七卷, 两地书 集外集 集外集拾遗 ; 第八卷, 会稽郡故书杂集 古小说钩沉 ; 第九卷, 嵇康集 中国小说史略 ; 第十卷, 小说旧闻钞 唐宋传奇集 汉文学史纲要 ; 第十一卷, 月界旅行 地底旅行 域外小说集 现代小说译丛 现代日本小说集 工人绥惠略夫 ; 第十二卷, 一个青年的梦 爱罗先珂童话集 桃色的云 ; 第十三卷, 苦闷的象征 出了象牙之塔 思想·山水·人物 ; 第十四卷, 小约翰 小彼得 表 俄罗斯的童话 药用植物 ; 第十五卷, 近代美术史潮论 艺术论 ; 第十六卷, 壁下译丛 译丛补 ; 第十七卷, 艺术论 现代新兴文学的诸问题 文艺与批评 文艺政策 ; 第十八卷, 十月 毁灭 山民牧唱 坏孩子和别的奇闻 ; 第十九卷, 竖琴 一天的工作 ; 第二十卷, 死魂灵.'.indexOf("cd-rom") >= 0 ||
+                                                '第一卷, 坟 呐喊 野草 ; 第二卷, 热风 彷徨 朝花夕拾 故事新编; 第三卷, 华盖集 华盖集续编 而已集 ; 第四卷, 三闲集 二心集 伪自由书 ; 第五卷, 南腔北调集 准风月谈 花边文学 ; 第六卷, 且介亭杂文 且介亭杂文二编 且介亭杂文末编 ; 第七卷, 两地书 集外集 集外集拾遗 ; 第八卷, 会稽郡故书杂集 古小说钩沉 ; 第九卷, 嵇康集 中国小说史略 ; 第十卷, 小说旧闻钞 唐宋传奇集 汉文学史纲要 ; 第十一卷, 月界旅行 地底旅行 域外小说集 现代小说译丛 现代日本小说集 工人绥惠略夫 ; 第十二卷, 一个青年的梦 爱罗先珂童话集 桃色的云 ; 第十三卷, 苦闷的象征 出了象牙之塔 思想·山水·人物 ; 第十四卷, 小约翰 小彼得 表 俄罗斯的童话 药用植物 ; 第十五卷, 近代美术史潮论 艺术论 ; 第十六卷, 壁下译丛 译丛补 ; 第十七卷, 艺术论 现代新兴文学的诸问题 文艺与批评 文艺政策 ; 第十八卷, 十月 毁灭 山民牧唱 坏孩子和别的奇闻 ; 第十九卷, 竖琴 一天的工作 ; 第二十卷, 死魂灵.'.indexOf("dvd") >= 0 || '第一卷, 坟 呐喊 野草 ; 第二卷, 热风 彷徨 朝花夕拾 故事新编; 第三卷, 华盖集 华盖集续编 而已集 ; 第四卷, 三闲集 二心集 伪自由书 ; 第五卷, 南腔北调集 准风月谈 花边文学 ; 第六卷, 且介亭杂文 且介亭杂文二编 且介亭杂文末编 ; 第七卷, 两地书 集外集 集外集拾遗 ; 第八卷, 会稽郡故书杂集 古小说钩沉 ; 第九卷, 嵇康集 中国小说史略 ; 第十卷, 小说旧闻钞 唐宋传奇集 汉文学史纲要 ; 第十一卷, 月界旅行 地底旅行 域外小说集 现代小说译丛 现代日本小说集 工人绥惠略夫 ; 第十二卷, 一个青年的梦 爱罗先珂童话集 桃色的云 ; 第十三卷, 苦闷的象征 出了象牙之塔 思想·山水·人物 ; 第十四卷, 小约翰 小彼得 表 俄罗斯的童话 药用植物 ; 第十五卷, 近代美术史潮论 艺术论 ; 第十六卷, 壁下译丛 译丛补 ; 第十七卷, 艺术论 现代新兴文学的诸问题 文艺与批评 文艺政策 ; 第十八卷, 十月 毁灭 山民牧唱 坏孩子和别的奇闻 ; 第十九卷, 竖琴 一天的工作 ; 第二十卷, 死魂灵.'.indexOf("minidisc") >= 0
+                                                || '第一卷, 坟 呐喊 野草 ; 第二卷, 热风 彷徨 朝花夕拾 故事新编; 第三卷, 华盖集 华盖集续编 而已集 ; 第四卷, 三闲集 二心集 伪自由书 ; 第五卷, 南腔北调集 准风月谈 花边文学 ; 第六卷, 且介亭杂文 且介亭杂文二编 且介亭杂文末编 ; 第七卷, 两地书 集外集 集外集拾遗 ; 第八卷, 会稽郡故书杂集 古小说钩沉 ; 第九卷, 嵇康集 中国小说史略 ; 第十卷, 小说旧闻钞 唐宋传奇集 汉文学史纲要 ; 第十一卷, 月界旅行 地底旅行 域外小说集 现代小说译丛 现代日本小说集 工人绥惠略夫 ; 第十二卷, 一个青年的梦 爱罗先珂童话集 桃色的云 ; 第十三卷, 苦闷的象征 出了象牙之塔 思想·山水·人物 ; 第十四卷, 小约翰 小彼得 表 俄罗斯的童话 药用植物 ; 第十五卷, 近代美术史潮论 艺术论 ; 第十六卷, 壁下译丛 译丛补 ; 第十七卷, 艺术论 现代新兴文学的诸问题 文艺与批评 文艺政策 ; 第十八卷, 十月 毁灭 山民牧唱 坏孩子和别的奇闻 ; 第十九卷, 竖琴 一天的工作 ; 第二十卷, 死魂灵.'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('目次备注'.indexOf("图书馆") >= 0) {
+                                            if ('第一卷, 坟 呐喊 野草 ; 第二卷, 热风 彷徨 朝花夕拾 故事新编; 第三卷, 华盖集 华盖集续编 而已集 ; 第四卷, 三闲集 二心集 伪自由书 ; 第五卷, 南腔北调集 准风月谈 花边文学 ; 第六卷, 且介亭杂文 且介亭杂文二编 且介亭杂文末编 ; 第七卷, 两地书 集外集 集外集拾遗 ; 第八卷, 会稽郡故书杂集 古小说钩沉 ; 第九卷, 嵇康集 中国小说史略 ; 第十卷, 小说旧闻钞 唐宋传奇集 汉文学史纲要 ; 第十一卷, 月界旅行 地底旅行 域外小说集 现代小说译丛 现代日本小说集 工人绥惠略夫 ; 第十二卷, 一个青年的梦 爱罗先珂童话集 桃色的云 ; 第十三卷, 苦闷的象征 出了象牙之塔 思想·山水·人物 ; 第十四卷, 小约翰 小彼得 表 俄罗斯的童话 药用植物 ; 第十五卷, 近代美术史潮论 艺术论 ; 第十六卷, 壁下译丛 译丛补 ; 第十七卷, 艺术论 现代新兴文学的诸问题 文艺与批评 文艺政策 ; 第十八卷, 十月 毁灭 山民牧唱 坏孩子和别的奇闻 ; 第十九卷, 竖琴 一天的工作 ; 第二十卷, 死魂灵.'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    第一卷, 坟 呐喊 野草 ; 第二卷, 热风 彷徨 朝花夕拾 故事新编; 第三卷, 华盖集 华盖集续编 而已集 ; 第四卷, 三闲集 二心集 伪自由书 ; 第五卷,
+                                    南腔北调集 准风月谈 花边文学 ; 第六卷, 且介亭杂文 且介亭杂文二编 且介亭杂文末编 ; 第七卷, 两地书 集外集 集外集拾遗 ; 第八卷, 会稽郡故书杂集
+                                    古小说钩沉 ; 第九卷, 嵇康集 中国小说史略 ; 第十卷, 小说旧闻钞 唐宋传奇集 汉文学史纲要 ; 第十一卷, 月界旅行 地底旅行 域外小说集 现代小说译丛
+                                    现代日本小说集 工人绥惠略夫 ; 第十二卷, 一个青年的梦 爱罗先珂童话集 桃色的云 ; 第十三卷, 苦闷的象征 出了象牙之塔 思想·山水·人物 ; 第十四卷, 小约翰
+                                    小彼得 表 俄罗斯的童话 药用植物 ; 第十五卷, 近代美术史潮论 艺术论 ; 第十六卷, 壁下译丛 译丛补 ; 第十七卷, 艺术论 现代新兴文学的诸问题 文艺与批评
+                                    文艺政策 ; 第十八卷, 十月 毁灭 山民牧唱 坏孩子和别的奇闻 ; 第十九卷, 竖琴 一天的工作 ; 第二十卷, 死魂灵.
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    概要:
+                                    <script>
+                                        if ('概要'.indexOf("载体形态") >= 0 || '概要'.indexOf("稽核项") >= 0) {
+                                            if ('《鲁迅全集》共20卷。本全集为纪念鲁迅先生诞辰140周年特修订出版。本全集的底本是1938年由上海复社出版的《鲁迅全集》, 由“鲁迅先生纪念委员会”编校, 收录了鲁迅所有文学作品、翻译作品和古籍辑校作品, 以及260多幅原版插图, 完整保存了鲁迅遗作的全貌。'.indexOf("CD") >= 0 || '《鲁迅全集》共20卷。本全集为纪念鲁迅先生诞辰140周年特修订出版。本全集的底本是1938年由上海复社出版的《鲁迅全集》, 由“鲁迅先生纪念委员会”编校, 收录了鲁迅所有文学作品、翻译作品和古籍辑校作品, 以及260多幅原版插图, 完整保存了鲁迅遗作的全貌。'.indexOf("cd-rom") >= 0 ||
+                                                '《鲁迅全集》共20卷。本全集为纪念鲁迅先生诞辰140周年特修订出版。本全集的底本是1938年由上海复社出版的《鲁迅全集》, 由“鲁迅先生纪念委员会”编校, 收录了鲁迅所有文学作品、翻译作品和古籍辑校作品, 以及260多幅原版插图, 完整保存了鲁迅遗作的全貌。'.indexOf("dvd") >= 0 || '《鲁迅全集》共20卷。本全集为纪念鲁迅先生诞辰140周年特修订出版。本全集的底本是1938年由上海复社出版的《鲁迅全集》, 由“鲁迅先生纪念委员会”编校, 收录了鲁迅所有文学作品、翻译作品和古籍辑校作品, 以及260多幅原版插图, 完整保存了鲁迅遗作的全貌。'.indexOf("minidisc") >= 0
+                                                || '《鲁迅全集》共20卷。本全集为纪念鲁迅先生诞辰140周年特修订出版。本全集的底本是1938年由上海复社出版的《鲁迅全集》, 由“鲁迅先生纪念委员会”编校, 收录了鲁迅所有文学作品、翻译作品和古籍辑校作品, 以及260多幅原版插图, 完整保存了鲁迅遗作的全貌。'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('概要'.indexOf("图书馆") >= 0) {
+                                            if ('《鲁迅全集》共20卷。本全集为纪念鲁迅先生诞辰140周年特修订出版。本全集的底本是1938年由上海复社出版的《鲁迅全集》, 由“鲁迅先生纪念委员会”编校, 收录了鲁迅所有文学作品、翻译作品和古籍辑校作品, 以及260多幅原版插图, 完整保存了鲁迅遗作的全貌。'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    《鲁迅全集》共20卷。本全集为纪念鲁迅先生诞辰140周年特修订出版。本全集的底本是1938年由上海复社出版的《鲁迅全集》, 由“鲁迅先生纪念委员会”编校,
+                                    收录了鲁迅所有文学作品、翻译作品和古籍辑校作品, 以及260多幅原版插图, 完整保存了鲁迅遗作的全貌。
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    图书馆:
+                                    <script>
+                                        if ('图书馆'.indexOf("载体形态") >= 0 || '图书馆'.indexOf("稽核项") >= 0) {
+                                            if ('北大中心馆'.indexOf("CD") >= 0 || '北大中心馆'.indexOf("cd-rom") >= 0 ||
+                                                '北大中心馆'.indexOf("dvd") >= 0 || '北大中心馆'.indexOf("minidisc") >= 0
+                                                || '北大中心馆'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('图书馆'.indexOf("图书馆") >= 0) {
+                                            if ('北大中心馆'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    北大中心馆
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('坟'.indexOf("CD") >= 0 || '坟'.indexOf("cd-rom") >= 0 ||
+                                                '坟'.indexOf("dvd") >= 0 || '坟'.indexOf("minidisc") >= 0
+                                                || '坟'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('坟'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    坟
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('呐喊'.indexOf("CD") >= 0 || '呐喊'.indexOf("cd-rom") >= 0 ||
+                                                '呐喊'.indexOf("dvd") >= 0 || '呐喊'.indexOf("minidisc") >= 0
+                                                || '呐喊'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('呐喊'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    呐喊
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('野草'.indexOf("CD") >= 0 || '野草'.indexOf("cd-rom") >= 0 ||
+                                                '野草'.indexOf("dvd") >= 0 || '野草'.indexOf("minidisc") >= 0
+                                                || '野草'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('野草'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    野草
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('热风'.indexOf("CD") >= 0 || '热风'.indexOf("cd-rom") >= 0 ||
+                                                '热风'.indexOf("dvd") >= 0 || '热风'.indexOf("minidisc") >= 0
+                                                || '热风'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('热风'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    热风
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('彷徨'.indexOf("CD") >= 0 || '彷徨'.indexOf("cd-rom") >= 0 ||
+                                                '彷徨'.indexOf("dvd") >= 0 || '彷徨'.indexOf("minidisc") >= 0
+                                                || '彷徨'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('彷徨'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    彷徨
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('朝花夕拾'.indexOf("CD") >= 0 || '朝花夕拾'.indexOf("cd-rom") >= 0 ||
+                                                '朝花夕拾'.indexOf("dvd") >= 0 || '朝花夕拾'.indexOf("minidisc") >= 0
+                                                || '朝花夕拾'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('朝花夕拾'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    朝花夕拾
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('故事新编'.indexOf("CD") >= 0 || '故事新编'.indexOf("cd-rom") >= 0 ||
+                                                '故事新编'.indexOf("dvd") >= 0 || '故事新编'.indexOf("minidisc") >= 0
+                                                || '故事新编'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('故事新编'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    故事新编
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('华盖集'.indexOf("CD") >= 0 || '华盖集'.indexOf("cd-rom") >= 0 ||
+                                                '华盖集'.indexOf("dvd") >= 0 || '华盖集'.indexOf("minidisc") >= 0
+                                                || '华盖集'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('华盖集'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    华盖集
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('华盖集续编'.indexOf("CD") >= 0 || '华盖集续编'.indexOf("cd-rom") >= 0 ||
+                                                '华盖集续编'.indexOf("dvd") >= 0 || '华盖集续编'.indexOf("minidisc") >= 0
+                                                || '华盖集续编'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('华盖集续编'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    华盖集续编
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('而已集'.indexOf("CD") >= 0 || '而已集'.indexOf("cd-rom") >= 0 ||
+                                                '而已集'.indexOf("dvd") >= 0 || '而已集'.indexOf("minidisc") >= 0
+                                                || '而已集'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('而已集'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    而已集
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('三闲集'.indexOf("CD") >= 0 || '三闲集'.indexOf("cd-rom") >= 0 ||
+                                                '三闲集'.indexOf("dvd") >= 0 || '三闲集'.indexOf("minidisc") >= 0
+                                                || '三闲集'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('三闲集'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    三闲集
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('二心集'.indexOf("CD") >= 0 || '二心集'.indexOf("cd-rom") >= 0 ||
+                                                '二心集'.indexOf("dvd") >= 0 || '二心集'.indexOf("minidisc") >= 0
+                                                || '二心集'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('二心集'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    二心集
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('伪自由书'.indexOf("CD") >= 0 || '伪自由书'.indexOf("cd-rom") >= 0 ||
+                                                '伪自由书'.indexOf("dvd") >= 0 || '伪自由书'.indexOf("minidisc") >= 0
+                                                || '伪自由书'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('伪自由书'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    伪自由书
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('南腔北调集'.indexOf("CD") >= 0 || '南腔北调集'.indexOf("cd-rom") >= 0 ||
+                                                '南腔北调集'.indexOf("dvd") >= 0 || '南腔北调集'.indexOf("minidisc") >= 0
+                                                || '南腔北调集'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('南腔北调集'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    南腔北调集
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('准风月谈'.indexOf("CD") >= 0 || '准风月谈'.indexOf("cd-rom") >= 0 ||
+                                                '准风月谈'.indexOf("dvd") >= 0 || '准风月谈'.indexOf("minidisc") >= 0
+                                                || '准风月谈'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('准风月谈'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    准风月谈
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('花边文学'.indexOf("CD") >= 0 || '花边文学'.indexOf("cd-rom") >= 0 ||
+                                                '花边文学'.indexOf("dvd") >= 0 || '花边文学'.indexOf("minidisc") >= 0
+                                                || '花边文学'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('花边文学'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    花边文学
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('且介亭杂文'.indexOf("CD") >= 0 || '且介亭杂文'.indexOf("cd-rom") >= 0 ||
+                                                '且介亭杂文'.indexOf("dvd") >= 0 || '且介亭杂文'.indexOf("minidisc") >= 0
+                                                || '且介亭杂文'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('且介亭杂文'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    且介亭杂文
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('且介亭杂文二编'.indexOf("CD") >= 0 || '且介亭杂文二编'.indexOf("cd-rom") >= 0 ||
+                                                '且介亭杂文二编'.indexOf("dvd") >= 0 || '且介亭杂文二编'.indexOf("minidisc") >= 0
+                                                || '且介亭杂文二编'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('且介亭杂文二编'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    且介亭杂文二编
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('且介亭杂文末编'.indexOf("CD") >= 0 || '且介亭杂文末编'.indexOf("cd-rom") >= 0 ||
+                                                '且介亭杂文末编'.indexOf("dvd") >= 0 || '且介亭杂文末编'.indexOf("minidisc") >= 0
+                                                || '且介亭杂文末编'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('且介亭杂文末编'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    且介亭杂文末编
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('两地书'.indexOf("CD") >= 0 || '两地书'.indexOf("cd-rom") >= 0 ||
+                                                '两地书'.indexOf("dvd") >= 0 || '两地书'.indexOf("minidisc") >= 0
+                                                || '两地书'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('两地书'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    两地书
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('集外集'.indexOf("CD") >= 0 || '集外集'.indexOf("cd-rom") >= 0 ||
+                                                '集外集'.indexOf("dvd") >= 0 || '集外集'.indexOf("minidisc") >= 0
+                                                || '集外集'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('集外集'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    集外集
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('集外集拾遗'.indexOf("CD") >= 0 || '集外集拾遗'.indexOf("cd-rom") >= 0 ||
+                                                '集外集拾遗'.indexOf("dvd") >= 0 || '集外集拾遗'.indexOf("minidisc") >= 0
+                                                || '集外集拾遗'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('集外集拾遗'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    集外集拾遗
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('会稽郡故书杂集'.indexOf("CD") >= 0 || '会稽郡故书杂集'.indexOf("cd-rom") >= 0 ||
+                                                '会稽郡故书杂集'.indexOf("dvd") >= 0 || '会稽郡故书杂集'.indexOf("minidisc") >= 0
+                                                || '会稽郡故书杂集'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('会稽郡故书杂集'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    会稽郡故书杂集
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('古小说钩沉'.indexOf("CD") >= 0 || '古小说钩沉'.indexOf("cd-rom") >= 0 ||
+                                                '古小说钩沉'.indexOf("dvd") >= 0 || '古小说钩沉'.indexOf("minidisc") >= 0
+                                                || '古小说钩沉'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('古小说钩沉'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    古小说钩沉
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('嵇康集'.indexOf("CD") >= 0 || '嵇康集'.indexOf("cd-rom") >= 0 ||
+                                                '嵇康集'.indexOf("dvd") >= 0 || '嵇康集'.indexOf("minidisc") >= 0
+                                                || '嵇康集'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('嵇康集'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    嵇康集
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('中国小说史略'.indexOf("CD") >= 0 || '中国小说史略'.indexOf("cd-rom") >= 0 ||
+                                                '中国小说史略'.indexOf("dvd") >= 0 || '中国小说史略'.indexOf("minidisc") >= 0
+                                                || '中国小说史略'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('中国小说史略'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    中国小说史略
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('小说旧闻钞'.indexOf("CD") >= 0 || '小说旧闻钞'.indexOf("cd-rom") >= 0 ||
+                                                '小说旧闻钞'.indexOf("dvd") >= 0 || '小说旧闻钞'.indexOf("minidisc") >= 0
+                                                || '小说旧闻钞'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('小说旧闻钞'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    小说旧闻钞
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('唐宋传奇集'.indexOf("CD") >= 0 || '唐宋传奇集'.indexOf("cd-rom") >= 0 ||
+                                                '唐宋传奇集'.indexOf("dvd") >= 0 || '唐宋传奇集'.indexOf("minidisc") >= 0
+                                                || '唐宋传奇集'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('唐宋传奇集'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    唐宋传奇集
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('汉文学史纲要'.indexOf("CD") >= 0 || '汉文学史纲要'.indexOf("cd-rom") >= 0 ||
+                                                '汉文学史纲要'.indexOf("dvd") >= 0 || '汉文学史纲要'.indexOf("minidisc") >= 0
+                                                || '汉文学史纲要'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('汉文学史纲要'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    汉文学史纲要
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('月界旅行'.indexOf("CD") >= 0 || '月界旅行'.indexOf("cd-rom") >= 0 ||
+                                                '月界旅行'.indexOf("dvd") >= 0 || '月界旅行'.indexOf("minidisc") >= 0
+                                                || '月界旅行'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('月界旅行'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    月界旅行
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!--- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('地底旅行'.indexOf("CD") >= 0 || '地底旅行'.indexOf("cd-rom") >= 0 ||
+                                                '地底旅行'.indexOf("dvd") >= 0 || '地底旅行'.indexOf("minidisc") >= 0
+                                                || '地底旅行'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('地底旅行'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    地底旅行
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('域外小说集'.indexOf("CD") >= 0 || '域外小说集'.indexOf("cd-rom") >= 0 ||
+                                                '域外小说集'.indexOf("dvd") >= 0 || '域外小说集'.indexOf("minidisc") >= 0
+                                                || '域外小说集'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('域外小说集'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    域外小说集
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('现代小说译丛'.indexOf("CD") >= 0 || '现代小说译丛'.indexOf("cd-rom") >= 0 ||
+                                                '现代小说译丛'.indexOf("dvd") >= 0 || '现代小说译丛'.indexOf("minidisc") >= 0
+                                                || '现代小说译丛'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('现代小说译丛'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    现代小说译丛
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('现代日本小说集'.indexOf("CD") >= 0 || '现代日本小说集'.indexOf("cd-rom") >= 0 ||
+                                                '现代日本小说集'.indexOf("dvd") >= 0 || '现代日本小说集'.indexOf("minidisc") >= 0
+                                                || '现代日本小说集'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('现代日本小说集'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    现代日本小说集
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('工人绥惠略夫'.indexOf("CD") >= 0 || '工人绥惠略夫'.indexOf("cd-rom") >= 0 ||
+                                                '工人绥惠略夫'.indexOf("dvd") >= 0 || '工人绥惠略夫'.indexOf("minidisc") >= 0
+                                                || '工人绥惠略夫'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('工人绥惠略夫'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    工人绥惠略夫
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('一个青年的梦'.indexOf("CD") >= 0 || '一个青年的梦'.indexOf("cd-rom") >= 0 ||
+                                                '一个青年的梦'.indexOf("dvd") >= 0 || '一个青年的梦'.indexOf("minidisc") >= 0
+                                                || '一个青年的梦'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('一个青年的梦'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    一个青年的梦
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('爱罗先珂童话集'.indexOf("CD") >= 0 || '爱罗先珂童话集'.indexOf("cd-rom") >= 0 ||
+                                                '爱罗先珂童话集'.indexOf("dvd") >= 0 || '爱罗先珂童话集'.indexOf("minidisc") >= 0
+                                                || '爱罗先珂童话集'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('爱罗先珂童话集'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    爱罗先珂童话集
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('桃色的云'.indexOf("CD") >= 0 || '桃色的云'.indexOf("cd-rom") >= 0 ||
+                                                '桃色的云'.indexOf("dvd") >= 0 || '桃色的云'.indexOf("minidisc") >= 0
+                                                || '桃色的云'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('桃色的云'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    桃色的云
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('苦闷的象征'.indexOf("CD") >= 0 || '苦闷的象征'.indexOf("cd-rom") >= 0 ||
+                                                '苦闷的象征'.indexOf("dvd") >= 0 || '苦闷的象征'.indexOf("minidisc") >= 0
+                                                || '苦闷的象征'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('苦闷的象征'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    苦闷的象征
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('出了象牙之塔'.indexOf("CD") >= 0 || '出了象牙之塔'.indexOf("cd-rom") >= 0 ||
+                                                '出了象牙之塔'.indexOf("dvd") >= 0 || '出了象牙之塔'.indexOf("minidisc") >= 0
+                                                || '出了象牙之塔'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('出了象牙之塔'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    出了象牙之塔
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('思想·山水·人物'.indexOf("CD") >= 0 || '思想·山水·人物'.indexOf("cd-rom") >= 0 ||
+                                                '思想·山水·人物'.indexOf("dvd") >= 0 || '思想·山水·人物'.indexOf("minidisc") >= 0
+                                                || '思想·山水·人物'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('思想·山水·人物'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    思想·山水·人物
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('小约翰'.indexOf("CD") >= 0 || '小约翰'.indexOf("cd-rom") >= 0 ||
+                                                '小约翰'.indexOf("dvd") >= 0 || '小约翰'.indexOf("minidisc") >= 0
+                                                || '小约翰'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('小约翰'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    小约翰
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('小彼得'.indexOf("CD") >= 0 || '小彼得'.indexOf("cd-rom") >= 0 ||
+                                                '小彼得'.indexOf("dvd") >= 0 || '小彼得'.indexOf("minidisc") >= 0
+                                                || '小彼得'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('小彼得'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    小彼得
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('表'.indexOf("CD") >= 0 || '表'.indexOf("cd-rom") >= 0 ||
+                                                '表'.indexOf("dvd") >= 0 || '表'.indexOf("minidisc") >= 0
+                                                || '表'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('表'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    表
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('俄罗斯的童话'.indexOf("CD") >= 0 || '俄罗斯的童话'.indexOf("cd-rom") >= 0 ||
+                                                '俄罗斯的童话'.indexOf("dvd") >= 0 || '俄罗斯的童话'.indexOf("minidisc") >= 0
+                                                || '俄罗斯的童话'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('俄罗斯的童话'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    俄罗斯的童话
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('药用植物'.indexOf("CD") >= 0 || '药用植物'.indexOf("cd-rom") >= 0 ||
+                                                '药用植物'.indexOf("dvd") >= 0 || '药用植物'.indexOf("minidisc") >= 0
+                                                || '药用植物'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('药用植物'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    药用植物
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('近代美术史潮论'.indexOf("CD") >= 0 || '近代美术史潮论'.indexOf("cd-rom") >= 0 ||
+                                                '近代美术史潮论'.indexOf("dvd") >= 0 || '近代美术史潮论'.indexOf("minidisc") >= 0
+                                                || '近代美术史潮论'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('近代美术史潮论'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    近代美术史潮论
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('艺术论'.indexOf("CD") >= 0 || '艺术论'.indexOf("cd-rom") >= 0 ||
+                                                '艺术论'.indexOf("dvd") >= 0 || '艺术论'.indexOf("minidisc") >= 0
+                                                || '艺术论'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('艺术论'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    艺术论
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('壁下译丛'.indexOf("CD") >= 0 || '壁下译丛'.indexOf("cd-rom") >= 0 ||
+                                                '壁下译丛'.indexOf("dvd") >= 0 || '壁下译丛'.indexOf("minidisc") >= 0
+                                                || '壁下译丛'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('壁下译丛'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    壁下译丛
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('译丛补'.indexOf("CD") >= 0 || '译丛补'.indexOf("cd-rom") >= 0 ||
+                                                '译丛补'.indexOf("dvd") >= 0 || '译丛补'.indexOf("minidisc") >= 0
+                                                || '译丛补'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('译丛补'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    译丛补
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('艺术论'.indexOf("CD") >= 0 || '艺术论'.indexOf("cd-rom") >= 0 ||
+                                                '艺术论'.indexOf("dvd") >= 0 || '艺术论'.indexOf("minidisc") >= 0
+                                                || '艺术论'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('艺术论'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    艺术论
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('现代新兴文学的诸问题'.indexOf("CD") >= 0 || '现代新兴文学的诸问题'.indexOf("cd-rom") >= 0 ||
+                                                '现代新兴文学的诸问题'.indexOf("dvd") >= 0 || '现代新兴文学的诸问题'.indexOf("minidisc") >= 0
+                                                || '现代新兴文学的诸问题'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('现代新兴文学的诸问题'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    现代新兴文学的诸问题
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('文艺与批评'.indexOf("CD") >= 0 || '文艺与批评'.indexOf("cd-rom") >= 0 ||
+                                                '文艺与批评'.indexOf("dvd") >= 0 || '文艺与批评'.indexOf("minidisc") >= 0
+                                                || '文艺与批评'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('文艺与批评'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    文艺与批评
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('文艺政策'.indexOf("CD") >= 0 || '文艺政策'.indexOf("cd-rom") >= 0 ||
+                                                '文艺政策'.indexOf("dvd") >= 0 || '文艺政策'.indexOf("minidisc") >= 0
+                                                || '文艺政策'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('文艺政策'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    文艺政策
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('十月'.indexOf("CD") >= 0 || '十月'.indexOf("cd-rom") >= 0 ||
+                                                '十月'.indexOf("dvd") >= 0 || '十月'.indexOf("minidisc") >= 0
+                                                || '十月'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('十月'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    十月
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('毁灭'.indexOf("CD") >= 0 || '毁灭'.indexOf("cd-rom") >= 0 ||
+                                                '毁灭'.indexOf("dvd") >= 0 || '毁灭'.indexOf("minidisc") >= 0
+                                                || '毁灭'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('毁灭'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    毁灭
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('山民牧唱'.indexOf("CD") >= 0 || '山民牧唱'.indexOf("cd-rom") >= 0 ||
+                                                '山民牧唱'.indexOf("dvd") >= 0 || '山民牧唱'.indexOf("minidisc") >= 0
+                                                || '山民牧唱'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('山民牧唱'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    山民牧唱
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('坏孩子和别的奇闻'.indexOf("CD") >= 0 || '坏孩子和别的奇闻'.indexOf("cd-rom") >= 0 ||
+                                                '坏孩子和别的奇闻'.indexOf("dvd") >= 0 || '坏孩子和别的奇闻'.indexOf("minidisc") >= 0
+                                                || '坏孩子和别的奇闻'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('坏孩子和别的奇闻'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    坏孩子和别的奇闻
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('竖琴'.indexOf("CD") >= 0 || '竖琴'.indexOf("cd-rom") >= 0 ||
+                                                '竖琴'.indexOf("dvd") >= 0 || '竖琴'.indexOf("minidisc") >= 0
+                                                || '竖琴'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('竖琴'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    竖琴
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('一天的工作'.indexOf("CD") >= 0 || '一天的工作'.indexOf("cd-rom") >= 0 ||
+                                                '一天的工作'.indexOf("dvd") >= 0 || '一天的工作'.indexOf("minidisc") >= 0
+                                                || '一天的工作'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('一天的工作'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    一天的工作
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    变异题名:
+                                    <script>
+                                        if ('变异题名'.indexOf("载体形态") >= 0 || '变异题名'.indexOf("稽核项") >= 0) {
+                                            if ('死魂灵'.indexOf("CD") >= 0 || '死魂灵'.indexOf("cd-rom") >= 0 ||
+                                                '死魂灵'.indexOf("dvd") >= 0 || '死魂灵'.indexOf("minidisc") >= 0
+                                                || '死魂灵'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('变异题名'.indexOf("图书馆") >= 0) {
+                                            if ('死魂灵'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    死魂灵
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- "Likeable" tag -->
+
+                                <dt class="viewmarctags">
+                                    论题主题:
+                                </dt>
+                                <dd class="viewmarctags">
+                                    <!-- Single term in tag -->
+                                    <a
+                                        href="/uhtbin/cgisirsi/?ps=GfGtXy28gA/北大中心馆/24230388/18/XC606/XSUBJECT/%E9%B2%81%E8%BF%85%E8%91%97%E4%BD%9C">鲁迅著作
+                                        全集</a>
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- Regular tag -->
+
+                                <dt class="viewmarctags">
+                                    <!-- Regular tag -->
+                                    中图法分类号:
+                                    <script>
+                                        if ('中图法分类号'.indexOf("载体形态") >= 0 || '中图法分类号'.indexOf("稽核项") >= 0) {
+                                            if ('I210.1'.indexOf("CD") >= 0 || 'I210.1'.indexOf("cd-rom") >= 0 ||
+                                                'I210.1'.indexOf("dvd") >= 0 || 'I210.1'.indexOf("minidisc") >= 0
+                                                || 'I210.1'.indexOf("光盘") >= 0) { sirsiCD = 1; }
+
+                                        }      	 
+                                    </script>
+                                    <script>
+                                        if ('中图法分类号'.indexOf("图书馆") >= 0) {
+                                            if ('I210.1'.indexOf("医学图书馆") >= 0) { library = 1; }
+
+                                        }   
+                                    </script>
+                                </dt>
+                                <dd class="viewmarctags">
+                                    I210.1
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- "Likeable" tag -->
+
+                                <dt class="viewmarctags">
+                                    个人名称－等同知识责任:
+                                </dt>
+                                <dd class="viewmarctags">
+                                    <!-- Single term in tag -->
+                                    <a
+                                        href="/uhtbin/cgisirsi/?ps=YOcaHF2LDX/北大中心馆/24230388/18/XC701/XAUTHOR/%E9%B2%81%E8%BF%85,">鲁迅,
+                                        1881-1936 著</a>
+                                </dd>
+
+                                <!-- Print inline webimage-type tag -->
+                                <!-- "Likeable" tag -->
+
+                                <dt class="viewmarctags">
+                                    附加团体著者:
+                                </dt>
+                                <dd class="viewmarctags">
+                                    <!-- Single term in tag -->
+                                    <a
+                                        href="/uhtbin/cgisirsi/?ps=oPLG6NDtlb/北大中心馆/24230388/18/XC712/XAUTHOR/%E9%B2%81%E8%BF%85%E5%85%88%E7%94%9F%E7%BA%AA%E5%BF%B5%E5%A7%94%E5%91%98%E4%BC%9A">鲁迅先生纪念委员会
+                                        编</a>
+                                </dd>
+
+                            </dl>
+                            <!--end of bib cell-->
+                            <dt class="viewmarctags">
+                                <script>
+                                    if (sirsiCD == 1) { document.write('随书光盘下载：'); }
+
+                                </script>
+                            </dt>
+                            <dd class="viewmarctags">
+                                <script>
+                                    if (sirsiCD == 1 && library == 1) { document.write('<a href="http://202.112.181.252/emlib4/system/datasource/opaclink.aspx?srchtype=I&wd=9787536094239">CD</a><img src="http://www1.lib.pku.edu.cn/doc/new.gif">'); }
+                                    else if (sirsiCD == 1 && library == 0) { document.write('<a href="http://162.105.138.112/bookcd/format/release/aspx/ServerMethodCaller.ashx?m=CalOpacEbbokDatafaceBDsirsi&w=9787536094239">CD</a><img src="http://www1.lib.pku.edu.cn/doc/new.gif">'); }
+                                </script>
+                            </dd>
+
+                            <!-- Print any WEBIMAGE tags that should appear after the list of tags -->
+
+                            <div class="clear_all"></div>
+
+
+
+                        </li>
+                        </ul> <!-- div container for content panels -->
+                        <script language="javascript" type="text/javascript">
+                            SdEcPageInterface.signalEvent("end-of-hit-list", { 'hit-list-isbn-list': ['9787536094239'] });
+                        </script>
+                    </div>
+                </div>
+                <input type="hidden" name="form_type" value="" />
+            </form>
+            <!--  Copyright (c) 2000 - 2010, SirsiDynix - LC Category hidden search form for javascript to work. -->
+            <form name="lc_search_form" method="post" action="/uhtbin/cgisirsi/?ps=8hGt5hAXyy/北大中心馆/24230388/5/5/74/1">
+                <input type="hidden" name="searchdata1" value="" />
+                <input type="hidden" name="search_disp_data1" value="" />
+            </form>
+            <form name="lc_return_form" method="post" action="/uhtbin/cgisirsi/?ps=R25BRhvyR0/北大中心馆/24230388/5/0/74/0">
+                <input type="hidden" name="searchdata1" value="" />
+                <input type="hidden" name="sort_by" value="" />
+            </form>
+        </div>
+        <div class="column pct25 details_right_column">
+            <!--  Copyright (c) 2000 - 2010, SirsiDynix - Unicorn Other Searches -->
+
+            <!-- when search field is not blank, assign term to ENGINE_TERM -->
+
+            <div class="content_container">
+                <div class="content">
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+            <div class="content_container">
+                <div class="content">
+                    <h3>OpenURL</h3>
+                    <a class="itemservices_link"
+                        href='javascript:sendOpenURL("9787536094239","鲁迅全集 鲁迅先生纪念委员会编 鲁迅著","","book"," http://zm8lp2fe5j.search.serialssolutions.com")'>其它连接</a>
+                </div>
+            </div>
+            <div class="content_container">
+                <div class="content">
+                    <h3>检索</h3>
+                    <a class="itemservices_link"
+                        href="javascript:open_win(' http://zm8lp2fe5j.search.serialssolutions.com/?SS_Page=REFINER&SS_RefinerEditable=yes')">期刊文章</a>
+                </div>
+            </div>
+            <!--  Copyright (c) 2000 - 2010, SirsiDynix - LC Categories list page. -->
+            <!--  Copyright (c) 2000 - 2010, SirsiDynix - Cross Reference "quick-view" box. This page file is processed by a SIRSI_Command for an So response. -->
+            <!-- if xref list present -->
+            <div class="content_container">
+                <div class="content">
+                    <h3>图书馆公告</h3>
+                    <!--  Copyright (c) 2000 - 2010, SirsiDynix - Announcements/Activity - This page file is processed by a  SIRSI_Command for an Si response. -->
+
+
+                    <ul class="info_desk">
+
+
+
+
+                        <li><a href="javascript:open_win('http://www.lib.pku.edu.cn')">返回图书馆主页</a></li>
+
+                        <!-- counter test -->
+
+
+
+
+                        <li><a href="javascript:open_win('http://pku.summon.serialssolutions.com/')">未名学术搜索</a></li>
+
+                        <!-- counter test -->
+
+
+
+
+                        <li><a
+                                href="javascript:open_win('http://www.lib.pku.edu.cn/portal/fw/rgzn/guancangfenbu')">图书馆开馆时间</a>
+                        </li>
+
+                        <!-- counter test -->
+
+
+
+
+                        <li><a href="javascript:open_win('http://ipatron.lib.pku.edu.cn/index')">借阅历史(不含当月)</a></li>
+
+                        <!-- counter test -->
+
+
+
+                        <!-- counter is more than 5 -->
+
+                        <!-- counter test -->
+
+
+
+                        <!-- counter is more than 5 -->
+
+                        <!-- counter test -->
+
+
+
+                        <li><a href="/uhtbin/cgisirsi/?ps=IXEzQzEpcq/北大中心馆/24230388/122/2004"
+                                style="color: #888888">更多信息</a></li>
+
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var myImage;
+        var origImage;
+        myImage = document.getElementById("detailsImage");
+        if (myImage != null) {
+            origImage = document.createElement("img");
+            origImage.src = myImage.src;
+            if (origImage.height == 1 && origImage.width == 1) {
+                myImage.height = 1;
+                myImage.width = 1;
+                myImage.src = origImage.src;
+            }
+        }
+    </script>
+
+    <div class="bottom_buttons">
+        <!--  Copyright (c) 2000 - 2014, SirsiDynix - Buttons for Item View page, state #5. -->
+        <div class="secondary_header_menu_container">
+            <h2>Contextual Navigation Menu</h2>
+            <ul class="menu">
+                <li class="menu_link">
+                    <!-- Go back button --><a href="/uhtbin/cgisirsi/?ps=cPoB6owsEV/北大中心馆/24230388/2/9"
+                        title="返回">返回</a>
+                </li>
+                <!--
+    <li class="menu_link">
+      <a href="/uhtbin/cgisirsi/?ps=oklqrSr7JU/北大中心馆/24230388/2/9" title="返回" alt="返回">GO BACK</a>
+    </li>
+     -->
+                <li class="menu_link">
+                    <!-- Help button -->
+                    <script language="javascript" type="text/javascript">
+                        //<![CDATA[
+                        put_help_button('Chinese', '帮助', 'full_details');
+    //]]>
+                    </script>
+                </li>
+
+                <li class="menu_link"><a href="/uhtbin/cgisirsi/?ps=ijQ52UGQEP/北大中心馆/24230388/49" title="新的检索">新的检索</a>
+                </li>
+
+                <!-- Backward button -->
+                <li class="menu_link"><a
+                        href="javascript:document.item_view.form_type.value = 'SCROLL^B'; document.item_view.submit()">后退</a>
+                </li>
+
+                <!-- Forward button -->
+                <li class="menu_link"><a
+                        href="javascript:document.item_view.form_type.value = 'SCROLL^F'; document.item_view.submit()">向前</a>
+                </li>
+
+                <!-- Cross Reference button -->
+
+                <!-- Text Archive Button -->
+
+                <!-- View Options Button -->
+                <li class="menu_link"><a
+                        href="javascript:document.item_view.form_type.value = 'VOPTIONS'; document.item_view.submit()">查看选项</a>
+                </li>
+
+                <!-- Capture Button -->
+                <li class="menu_link"><a
+                        href="javascript:document.item_view.form_type.value = 'CAPTURE'; document.item_view.submit()">打印/邮寄/保存</a>
+                </li>
+
+
+                <!-- hidden ebook processing -->
+
+                <!-- gateway's custom buttons -->
+
+
+
+
+
+
+                <li class="menu_link"><a href="/uhtbin/cgisirsi/?ps=z3r9SczNMP/北大中心馆/24230388/163" title="退出登录"
+                        target="_top">退出登录</a></li>
+                <li class="menu_link"><a name="skipnav"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer_container">
+        <!--  Copyright (c) 1996 - 2014, SirsiDynix - Copyright statement -->
+        <table border="0" cellpadding="3" cellspacing="0" width="100%" class="footer">
+            <tr>
+                <td align="left" valign="bottom" width="25%" class="footer">
+                    <img src="/WebCat_Images/Chinese/Other/MiscD/sirsi_button.gif" alt="Powered by: SirsiDynix"
+                        border="0" />
+                </td>
+                <td align="center" class="footer">
+                    Search the library catalog on&nbsp;<a
+                        href="http://users.sirsidynix.com?client=eLib&sitecode=PKUL">Facebook</a>&nbsp;or on
+                    your&nbsp;<a href="http://users.sirsidynix.com?client=eLib&sitecode=PKUL">mobile phone</a>!
+                </td>
+                <td align="right" class="footer" width="25%" id="requiredCell">
+                    <!-- Display the description -->
+                    <a name="bottom" href="#top">TOP</a>
+                    <div id="feature">
+                        <div id="required"></div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script language="JavaScript" type="text/javascript">
+        setLocalizedValue("PERMALINK", "固定链接");
+        setLocalizedValue("TO_LINK", "可从email,博客或其它网页中用以下的链接连接到当前的馆藏,列表,检索结果或页面。");
+        setLocalizedValue("CLOSE", "关闭");
+        setLocalizedValue("PAGE_LINK", "页面链接");
+        setLocalizedValue("NEW_TAB", "在新选项卡中打开链接 ");
+    </script>
+
+</body>
+
+</html>
